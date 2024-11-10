@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Inheritance.Ex2
 {
-    internal class Passport
+    public class Passport
     {
         protected string Id;
         protected string Name;
@@ -17,7 +17,8 @@ namespace Inheritance.Ex2
 
 
 
-        public Passport(string id, string name, string surname, string country, string city, string birthdate)
+        public Passport(string id, string name, string surname, 
+            string country, string city, string birthdate)
         {
             Id = id; 
             Name = name;

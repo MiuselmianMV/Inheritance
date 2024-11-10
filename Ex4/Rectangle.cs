@@ -7,10 +7,12 @@ using System.Threading.Tasks;
 
 namespace Inheritance.Ex4
 {
-    internal class Rectangle:Shape
+    public class Rectangle:Shape
     {
         protected int SideA;
         protected int SideB;
+
+
         public Rectangle(int size, int sideA, int sideB) : base(size)
         {
             SideA = sideA;
@@ -18,11 +20,15 @@ namespace Inheritance.Ex4
             SideB = sideB;
 
         }
+
+
         public override void Area()
         {
             base.Area();
             Console.WriteLine("Area of rectangle: {0}", SideA*SideB);
         }
+
+
         public override void Show()
         {
             base.Show();

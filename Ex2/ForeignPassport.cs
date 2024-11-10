@@ -6,16 +6,21 @@ using System.Threading.Tasks;
 
 namespace Inheritance.Ex2
 {
-    internal class ForeignPassport:Passport
+    public class ForeignPassport : Passport
     {
         protected string Visas;
         protected string ForeignId;
-        public ForeignPassport(string visas,string foreignId , string id, string name, string surname, string country, string city, string birthdate):
-            base( id,  name,  surname,  country,  city,  birthdate)
+
+
+        public ForeignPassport(string visas,string foreignId, 
+            string id, string name, string surname, 
+            string country, string city, string birthdate)
+            : base( id,  name,  surname,  country,  city,  birthdate)
         {
             Visas = visas;
             ForeignId = foreignId;
         }
+
 
         public override void Show()
         {

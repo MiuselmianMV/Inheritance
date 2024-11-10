@@ -6,20 +6,26 @@ using System.Threading.Tasks;
 
 namespace Inheritance.Ex4
 {
-    internal class Triangle:Shape
+    public class Triangle : Shape
     {
         protected int Basement;
         protected int Perpendicular;
+
+
         public Triangle(int size, int basement, int perpendicular) : base(size)
         {
             Basement = basement;
             Perpendicular = perpendicular;
         }
+
+
         public override void Area()
         {
             base.Area();
             Console.WriteLine("Area of triangle: {0}", 0.5*Basement*Perpendicular);
         }
+
+
         public override void Show()
         {
             base.Show();

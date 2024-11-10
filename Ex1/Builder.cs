@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Inheritance.Ex1
 {
-    internal class Builder:Human
+    public class Builder : Human
     {
         public Builder(string name, int age):base(name, age)
         {
          
         }
+
+
         public override void Work()
         {
             Console.WriteLine("Builer builds a house.");

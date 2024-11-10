@@ -42,6 +42,7 @@ namespace Inheritance
             TestEx1(pilot);
             TestEx1(builder);
         }
+
         static void Ex2()
         {
             Console.WriteLine("\n----------------------------------Ex2----------------------------------\n");
@@ -60,6 +61,7 @@ namespace Inheritance
             Test2(foreignPassport);
 
         }
+
         static void Test2(Passport passport)
         {
             passport.Show();

@@ -6,15 +6,18 @@ using System.Threading.Tasks;
 
 namespace Inheritance.Ex1
 {
-    internal class Human
+    public class Human
     {
         protected string Name;
         protected int Age;
+
         public Human(string name, int age)
         {
             Name = name;
             Age = age;
         }
+
+
         public virtual void Work()
         {
             Console.WriteLine("Human does housework.");

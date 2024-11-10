@@ -7,9 +7,10 @@ using System.Xml.Linq;
 
 namespace Inheritance.Ex3
 {
-    internal class Tiger:Animal
+    public class Tiger : Animal
     {
-        public Tiger(int lenOfTail, string name, int weight, int height) :base(lenOfTail, name, weight, height) 
+        public Tiger(int lenOfTail, string name, int weight, int height) 
+            : base(lenOfTail, name, weight, height) 
         {
             
         }

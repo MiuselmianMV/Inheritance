@@ -6,18 +6,24 @@ using System.Threading.Tasks;
 
 namespace Inheritance.Ex4
 {
-    internal class Square:Shape
+    public class Square : Shape
     {
         protected int Side;
+
+
         public Square(int size, int side):base(size)
         {
             Side = side;
         }
+
+
         public override void Area()
         {
             base.Area();
             Console.WriteLine("Area of Square: {0}", Side*Side);
         }
+
+
         public override void Show()
         {
             base.Show();

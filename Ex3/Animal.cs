@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Inheritance.Ex3
 {
-    internal class Animal
+    public class Animal
     {
         public string Name;
         public int Weight;
         public int Height;
         public int LengthOfTail;
+
+
         public Animal(int lenOfTail, string name, int weight, int height)
         {
             Name = name;

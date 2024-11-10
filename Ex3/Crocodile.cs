@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace Inheritance.Ex3
 {
-    internal class Crocodile:Animal
+    public class Crocodile : Animal
     {
-        public Crocodile(int lenOfTail, string name, int weight, int height) : base(lenOfTail, name, weight, height)
+        public Crocodile(int lenOfTail, string name, int weight, int height)
+            : base(lenOfTail, name, weight, height)
         {
         }
         public override void Show()
