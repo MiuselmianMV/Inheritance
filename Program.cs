@@ -9,9 +9,9 @@ namespace Inheritance
     {
         static void Main(string[] args)
         {
-            //Ex1();
-            //Ex2();
-            //Ex3();
+            Ex1();
+            Ex2();
+            Ex3();
             Ex4();
         }
 
@@ -83,7 +83,12 @@ namespace Inheritance
         
         static void Ex4()
         {
-            Shape[] shapes = [new Shape(1), new Triangle(2, 5, 10), new Rectangle(3, 4, 9), new Square(4, 10), new Circle(5, 10)];
+            Shape[] shapes = [new Shape(1), 
+                            new Triangle(2, 5, 10),
+                            new Rectangle(3, 4, 9), 
+                            new Square(4, 10), 
+                            new Circle(5, 10),
+                            ];
 
             Console.WriteLine("\n----------------------------------Ex4----------------------------------\n");
             Console.WriteLine("Methods Show:\n");
